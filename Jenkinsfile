@@ -1,4 +1,5 @@
 @Library('mylibrary') _
+import restaurant.sample.Person
 pipeline {
     agent any
     tools {nodejs "node"}
@@ -11,7 +12,12 @@ pipeline {
         }
         stage('Build') {
             steps {
-                echo 'Building project...'
+                echo 'Building...'
+                script {
+					def p = new Person()
+					def r = p.hello()
+					println(r)
+				}
             }
         }
         stage('Test') {

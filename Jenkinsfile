@@ -1,3 +1,4 @@
+@Library('mylibrary') _
 pipeline {
     agent any
     tools {nodejs "node"}
@@ -5,7 +6,7 @@ pipeline {
         stage('Install dependencies') {
             steps {
 				echo 'Installing...'
-				hello('marvin')
+				hello('marvin2')
             }
         }
         stage('Build') {

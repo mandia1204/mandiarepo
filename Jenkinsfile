@@ -1,2 +1,2 @@
 @Library('mylibrary') _
-myTestPipeline(myMessage:'hiiiiii')
+myTestPipeline(myMessage:'hiiiiii', runTest: false)

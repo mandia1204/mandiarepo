@@ -1,2 +1,2 @@
 @Library('mylibrary') _
-myTestPipeline(myMessage:'hiiiiii', runTest: false)
+myTestPipeline(myMessage:'hiiiiii', repoName:'mandia1204/securityapp', appName:'security',  runTest: false)

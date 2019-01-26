@@ -11,6 +11,7 @@ pipeline {
                     sh "pwd"
 					sh "ls -l"
                     sh "ls -l dist"
+					sh "printenv"
                 }
             }
         }
